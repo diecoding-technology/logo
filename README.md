@@ -387,7 +387,6 @@ Please check the [LICENSE](LICENSE) file for usage terms and conditions.
 
 ---
 
-<p align="center">
-  <img src="v2/icon.svg" alt="Die Coding Technology" width="32" height="32" style="vertical-align: middle; margin-right: 8px;">
-  <strong>Die Coding Technology</strong> - Code Beyond Limits, Create Beyond Imagination
-</p>
+### Die Coding Technology
+
+*-- Code Beyond Limits, Create Beyond Imagination*
