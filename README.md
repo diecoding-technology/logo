@@ -14,6 +14,63 @@ Welcome to the Die Coding Technology Logo repository! This repository contains t
 
 ![Die Coding Technology Animated Icon](v2/icon-animate.svg)
 
+## Asset Generation
+
+This repository includes automated asset generation that converts the SVG icons into various formats suitable for different use cases.
+
+### Generated Assets
+
+The asset generator creates the following formats:
+
+#### PNG Files (`assets/png/`)
+
+- **16x16** to **1024x1024** pixels
+- Perfect for web usage, app icons
+- High-quality rasterized versions
+
+#### Favicon Files (`assets/favicon/`)
+
+- **favicon.ico** - Multi-size ICO file (16, 24, 32, 48, 64px)
+- Individual PNG files for modern browsers
+- Cross-browser compatible
+
+#### OpenGraph Images (`assets/opengraph/`)
+
+- **1200x630** - Standard OpenGraph for social media
+- **1200x1200** - Square format for social platforms
+- **800x800** - Instagram square posts
+- **1080x1080** - Instagram standard posts
+- **1200x675** - Twitter card format
+
+### Asset Generation Usage
+
+#### Manual Generation
+
+Run the asset generator locally:
+
+```bash
+# Using the shell script (recommended)
+./generate_assets.sh
+
+# Or directly with Python
+python scripts/generate_assets.py
+```
+
+#### GitHub Action
+
+Assets are automatically generated when SVG files change:
+
+- Triggers on push to `main` branch
+- Generates all asset formats
+- Commits results back to repository
+- Zero-configuration deployment
+
+#### Requirements
+
+- Python 3.8+
+- Libraries: `cairosvg`, `pillow`
+- System: `librsvg2-bin`, `imagemagick` (Linux/macOS)
+
 ## Files
 
 - `v2/icon.svg` - Static version of the Die Coding Technology logo
